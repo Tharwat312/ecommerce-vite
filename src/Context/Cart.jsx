@@ -38,7 +38,6 @@ export default function CartContextProvider(props) {
         if (localStorage.getItem('UserToken') !== null) {
             setToken(localStorage.getItem("UserToken"));
             getLoggedUserCartContext().then((response) => {
-                console.log(response);
                 setNumCartItems(response.data.numOfCartItems);
                 setCartID(response.data.data._id);
             }).catch(() => {
