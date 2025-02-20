@@ -44,7 +44,6 @@ let routers = createBrowserRouter([
   }
 ])
 function App() {
-  let { setToken } = useContext(TokenContext);
   return (
     <>
       <RouterProvider router={routers}></RouterProvider>
